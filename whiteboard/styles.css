@@ -15,7 +15,7 @@
   height: 100%;
   width: 100%;
   background: white; /* same as background */
-  animation: reveal 4s linear forwards;
+  animation: reveal 0.5s linear forwards;
 }
 
 @keyframes reveal {
