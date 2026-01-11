@@ -1,0 +1,24 @@
+.draw-text {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+  position: relative;
+  color: black;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.draw-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: white; /* same as background */
+  animation: reveal 4s linear forwards;
+}
+
+@keyframes reveal {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
