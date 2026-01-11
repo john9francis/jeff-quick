@@ -1,24 +1,61 @@
-.draw-text {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 4rem;
-  position: relative;
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  /* font-family: "Permanent Marker"; */
+}
+
+h1 {
+  font-family: 'Permanent Marker';
   color: black;
-  display: inline-block;
-  overflow: hidden;
 }
 
-.draw-text::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
+main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: grey;
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: sticky; */
+  padding: 2rem;
+}
+
+section.card {
+  border: 2px solid black;
+  background-color: beige;
+
+}
+
+nav {
+  position: fixed;
   width: 100%;
-  background: white; /* same as background */
-  animation: reveal 0.5s linear forwards;
+  background-color: beige;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 5;
 }
 
-@keyframes reveal {
-  from { transform: translateX(0); }
-  to { transform: translateX(100%); }
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.hero h1 {
+  font-family: serif;
+  font-size: 8rem;
 }
