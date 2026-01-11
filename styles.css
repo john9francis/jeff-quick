@@ -4,7 +4,8 @@ html {
 }
 
 body {
-  margin: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: grey;
   text-align: center;
@@ -18,4 +19,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+nav {
+  position: fixed;
 }
