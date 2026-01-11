@@ -35,13 +35,9 @@ nav {
   box-sizing: border-box;
 }
 
-.nav-items div {
+.nav-items {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-}
-
-.nav-items a {
-  flex: 1;
 }
