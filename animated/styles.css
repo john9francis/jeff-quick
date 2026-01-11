@@ -54,3 +54,7 @@ nav {
 .hero h1 {
   font-size: 10rem;
 }
+
+.logo.js {
+  height: 30px;
+}
