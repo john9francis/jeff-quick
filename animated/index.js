@@ -3,12 +3,12 @@ const utils = anime.utils
 const spring = anime.spring
 const createDraggable = anime.createDraggable
 
-const [ $logo ] = utils.$('.logo.js');
+const [ $logo ] = utils.$('.logo.in');
 const [ $button ] = utils.$('button');
 let rotations = 0;
 
 // Created a bounce animation loop
-animate('.logo.js', {
+animate('.logo.in', {
   scale: [
     { to: 1.25, ease: 'inOut(3)', duration: 200 },
     { to: 1, ease: spring({ bounce: .7 }) }
@@ -18,8 +18,8 @@ animate('.logo.js', {
 });
 
 // Make the logo draggable around its center
-createDraggable('.logo.js', {
-  container: [10, 0, 0, 0],
+createDraggable('.logo.in', {
+  container: [5, 0, 0, 0],
   releaseEase: spring({ bounce: .7 })
 });
 
