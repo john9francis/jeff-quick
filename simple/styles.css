@@ -18,7 +18,6 @@ main {
 }
 
 section {
-  background-color: aliceblue;
   height: 100vh;
   scroll-snap-align: start;
 
@@ -26,9 +25,14 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* position: sticky; */
+  padding: 2rem;
+}
 
-  position: sticky;
-  top: 0;
+section.card {
+  border: 2px solid black;
+  background-color: beige;
+
 }
 
 nav {
