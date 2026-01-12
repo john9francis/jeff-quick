@@ -1,0 +1,18 @@
+.whiteboard {
+  display: grid;
+  /* background: #999; */
+}
+
+.whiteboard.no-lines .pixel {
+  border: none;
+}
+
+.pixel {
+  /* background: white; */
+  /* border: 1px solid #ccc; */
+  box-sizing: border-box;
+}
+
+.pixel.black {
+  background: black;
+}
