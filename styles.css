@@ -2,7 +2,7 @@ html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: clamp(14px, 1.2vw + 14px, 18px);
 }
 
 body {
@@ -140,7 +140,7 @@ h1 {
     align-items: flex-start;     /* left alignment */
     text-align: left;
   }
-
+  
   html {
     font-size: 22px;
   }
