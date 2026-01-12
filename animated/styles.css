@@ -53,10 +53,22 @@ nav {
 
 h1 {
   font-family: 'Permanent Marker';
+  user-select: none;
+}
+
+.hero {
+  position: relative;
 }
 
 .hero h1 {
   font-size: 5rem;
+  text-shadow:
+    1px 1px 0 white,
+   -1px 1px 0 white,
+    1px -1px 0 white,
+   -1px -1px 0 white;
+   z-index: 1;
+   pointer-events: none;
 }
 
 .logo.in {
