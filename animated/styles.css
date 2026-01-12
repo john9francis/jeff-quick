@@ -42,10 +42,11 @@ section.card {
 nav {
   position: fixed;
   width: 100%;
-  background-color: beige;
+  background-color: white;
   padding: 1rem;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   z-index: 5;
+  border-bottom: 2px solid black; /* optional */
 }
 
 .nav-items {
