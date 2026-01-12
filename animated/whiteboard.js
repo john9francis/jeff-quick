@@ -17,7 +17,7 @@ function setupCanvas(canvas) {
   let erasing = false;
   let lastX = 0;
   let lastY = 0;
-  const BRUSH_SIZE = 6;
+  const BRUSH_SIZE = 10;
 
   function getMousePos(e) {
     const rect = canvas.getBoundingClientRect();
