@@ -61,7 +61,8 @@ nav {
   position: fixed;
   width: 100%;
   background-color: white;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   z-index: 5;
   border-bottom: 2px solid black; /* optional */
 }
