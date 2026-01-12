@@ -11,10 +11,14 @@ body {
 }
 
 main {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  
   /* color: grey; */
   text-align: center;
+}
+
+p {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 section {
@@ -26,7 +30,7 @@ section {
   justify-content: center;
   align-items: center;
   /* position: sticky; */
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 section.card {
