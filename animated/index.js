@@ -4,8 +4,6 @@ const spring = anime.spring
 const createDraggable = anime.createDraggable
 
 const [ $logo ] = utils.$('.logo.in');
-const [ $button ] = utils.$('button');
-let rotations = 0;
 
 // Created a bounce animation loop
 animate('.logo.in', {
@@ -19,19 +17,6 @@ animate('.logo.in', {
 
 // Make the logo draggable around its center
 createDraggable('.logo.in', {
-  container: [5, 0, 0, 0],
-  releaseEase: spring({ bounce: .7 })
+  container: [0, 0, 0, 0],
+  releaseEase: spring({ bounce: .75 })
 });
-
-// Animate logo rotation on click
-const rotateLogo = () => {
-  rotations++;
-  $button.innerText = `rotations: ${rotations}`;
-  animate($logo, {
-    rotate: rotations * 360,
-    ease: 'out(4)',
-    duration: 1500,
-  });
-}
-
-$button.addEventListener('click', rotateLogo);
