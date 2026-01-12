@@ -4,7 +4,7 @@ let drawing = false;
 let erasing = false;
 let lastIdx = null;
 
-const BRUSH_RADIUS = 1; // 0 = skinny, 1 = slightly thicker
+const BRUSH_RADIUS = 2; // 0 = skinny, 1 = slightly thicker
 
 function createwhiteboard(cols, rows, oldValues = []) {
   whiteboard.innerHTML = "";
@@ -118,5 +118,5 @@ document.addEventListener("mouseup", () => {
 whiteboard.addEventListener("contextmenu", e => e.preventDefault());
 
 document.addEventListener("DOMContentLoaded", () => {
-  createwhiteboard(128, 64);
+  createwhiteboard(256, 64);
 });
