@@ -2,6 +2,7 @@ html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  font-size: 22px;
 }
 
 body {
@@ -131,7 +132,7 @@ h1 {
 
 
 /* Styles for narrow screens */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .hero {
     margin-left: max(4rem, 25%);
     display: flex;
