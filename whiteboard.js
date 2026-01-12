@@ -29,15 +29,15 @@ function setupCanvas(canvas) {
     };
   }
 
-  canvas.addEventListener("mousedown", e => {
+  canvas.addEventListener("pointerdown", e => {
     drawing = true;
     const pos = getMousePos(e);
     lastX = pos.x;
     lastY = pos.y;
-    if (e.button === 2) erasing = true;
+    // if (e.button === 2) erasing = true;
   });
 
-  canvas.addEventListener("mousemove", e => {
+  canvas.addEventListener("pointermove", e => {
     if (!drawing) return;
     const pos = getMousePos(e);
     ctx.strokeStyle = erasing ? "#fff" : "#000";
@@ -50,13 +50,13 @@ function setupCanvas(canvas) {
     lastY = pos.y;
   });
 
-  canvas.addEventListener("mouseup", () => {
+  canvas.addEventListener("pointerup", () => {
     drawing = false;
     erasing = false;
   });
 
   // Disable right-click menu
-  canvas.addEventListener("contextmenu", e => e.preventDefault());
+  // canvas.addEventListener("contextmenu", e => e.preventDefault());
 }
 
 // Initialize hero and section canvases
